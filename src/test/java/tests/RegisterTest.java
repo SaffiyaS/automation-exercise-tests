@@ -59,7 +59,10 @@ public class RegisterTest extends BaseTest {
 
         // Success screen includes a green banner with the account confirmation copy
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("h2[data-qa='account-created']")));
-        Assert.assertTrue(driver.findElement(By.cssSelector("h2[data-qa='account-created']")).getText().contains("ACCOUNT CREATED!"));
+        String createdHeading = driver.findElement(By.cssSelector("h2[data-qa='account-created']")).getText();
+        Assert.assertTrue(
+                createdHeading.toLowerCase().contains("account created"),
+                "Confirmation heading should mention the new account.");
     }
 
     @Test

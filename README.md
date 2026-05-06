@@ -26,7 +26,7 @@ mvn test
 
 1. `LoginTest.validLoginTest` — Valid credentials expose the authenticated header link.
 2. `LoginTest.invalidLoginTest` — Bad password surfaces the site's standard error banner.
-3. `RegisterTest.registerNewUserTest` — Random signup completes and lands on ACCOUNT CREATED.
+3. `RegisterTest.registerNewUserTest` — Random signup completes with the green “Account Created!” confirmation heading.
 4. `RegisterTest.registerExistingEmailTest` — Reusing `test@saffiya.com` is rejected with duplicate-email copy.
 5. `ProductTest.searchProductTest` — Querying *T-Shirt* renders the searched-products grid.
 6. `ProductTest.viewProductDetailsTest` — Opening the first PDP shows name plus rupee pricing.
