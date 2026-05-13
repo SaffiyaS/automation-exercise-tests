@@ -1,4 +1,4 @@
-## Automation Exercise - Selenium Test Suite
+## Automation - Selenium Test Suite
 
 Maven-based regression checks for core shopping flows on the public demo storefront at https://automationexercise.com. The specs lean on Selenium WebDriver 4 plus TestNG, with explicit waits for the site's AJAX-heavy cart and signup steps.
 
